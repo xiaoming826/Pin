@@ -83,10 +83,10 @@ span.error{display:block; margin:5px 0 10px 0; font-size:14px; color:#ff6a6a;tex
 #noticeTip a.closeNT:hover{transform: rotate(180deg);-ms-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);-moz-transform: rotate(180deg);}
 #container{width:1024px;margin:35px auto 0; padding-bottom:100px; }
 #search_box{width:744px;height:41px; position:relative;}
-#search_input{border:2px solid #747778;border-right:none;width:574px; height:23px; line-height:23px;float:left;font-size:16px;padding:7px 8px;margin:0;}
+#search_input{border:2px solid #747778;border-right:none;width:804px; height:23px; line-height:23px;float:left;font-size:16px;padding:7px 8px;margin:0;}
 #search_button{height:41px;width:152px; color:#FFF; font-size:18px;border:none;background:#747778;float:right; cursor:pointer;}
 #search_button:hover{background:#616364;} 
-#search_box{border:2px solid #019875;width:740px;height:37px; position:relative;}
+#search_box{border:2px solid #019875;width:990px;height:37px; position:relative;}
 #search_input{width:476px; height:23px; line-height:23px;float:left;font-size:16px;padding:7px 8px 7px 10px;margin:0 0 0 94px;border:0;}
 #search_button{height:37px;width:152px; color:#FFF; font-size:18px;border:none;background:#019875;float:right; cursor:pointer;}
 #search_button:hover{background:#028b6b;}
@@ -116,7 +116,7 @@ span.error{display:block; margin:5px 0 10px 0; font-size:14px; color:#ff6a6a;tex
 #sidebar .subscribe{display:block;font-size:18px;height:46px;line-height:46px;background:#fafafa url(img/sub_icon.png) 180px center no-repeat;padding:0 80px 0 20px;margin-top:12px;border-bottom:2px solid #019875;}
 
 /*index content*/
-.content{ width:744px; float:right;}
+.content{ width:1000px; float:right;}
 .da-thumbs {list-style: none;height: 118px;	position: relative;	margin: 0 0 25px 0;	padding: 0;}
 .da-thumbs li {	float: left;margin-right:8px;background: #fff;position: relative;	border:2px solid #fafafa;}
 .da-thumbs li.last{margin-right:0;}
