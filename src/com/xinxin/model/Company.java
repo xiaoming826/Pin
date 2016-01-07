@@ -4,15 +4,19 @@ import java.util.List;
 
 public class Company {
 	/*
+	 * 
+	 drop table company;
 	 create table company(
-	 	id int primary key,
+	 	id int primary key AUTO_INCREMENT,
 	 	name varchar(50),
 	 	age varchar(50),
 	 	tel varchar(50),
 	 	companyName varchar(50),
-	 	companyAddrs varchar(50)
-	 )
+	 	companyAddrs varchar(50),
+	 	pwd varchar(50)
+	 );
 	 
+	 insert into company (name,tel,companyName,companyAddrs,pwd) values ("某某","12345678901","某某公司","济南","123")
 	 */
 	private int id;
 	private String name;
@@ -21,6 +25,7 @@ public class Company {
 	private String tel;
 	private String companyName;
 	private String companyAddrs;
+	private String pwd;
 	private List<JobInfo> jobs;
 	
 	public int getId() {
@@ -71,6 +76,20 @@ public class Company {
 	public void setJobs(List<JobInfo> jobs) {
 		this.jobs = jobs;
 	}
+	public String getPwd() {
+		return pwd;
+	}
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
+	}
+	@Override
+	public String toString() {
+		return "Company [id=" + id + ", name=" + name + ", sex=" + sex + ", age=" + age + ", tel=" + tel
+				+ ", companyName=" + companyName + ", companyAddrs=" + companyAddrs + ", pwd=" + pwd + ", jobs=" + jobs
+				+ "]";
+	}
+	
+	
 	
 	
 }

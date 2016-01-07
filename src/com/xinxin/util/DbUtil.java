@@ -16,30 +16,24 @@ public class DbUtil {
 		}
 		// 驱动程序名
 		String driver = "com.mysql.jdbc.Driver";
-
 		// URL指向要访问的数据库名scutcs
-		String url = "jdbc:mysql://127.0.0.1:3306/scutcs";
-
+		String url = "jdbc:mysql://127.0.0.1:3306/pin?useUnicode=true&characterEncoding=utf-8";
 		// MySQL配置时的用户名
 		String user = "root";
-
 		// MySQL配置时的密码
-		String password = "root";
-
+		String password = "123456";
 		// 加载驱动程序
 		try {
 			Class.forName(driver);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-
 		// 连续数据库
 		try {
 			conn = DriverManager.getConnection(url, user, password);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
 		return conn;
 	}
 	
@@ -51,5 +45,10 @@ public class DbUtil {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static void main(String[] args) {
+		Connection connection=getConn();
+		System.out.println(connection);
 	}
 }

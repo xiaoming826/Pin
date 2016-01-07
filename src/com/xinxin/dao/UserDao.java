@@ -9,7 +9,7 @@ public interface UserDao {
 
 	public boolean remove(User user);
 
-	public User query(User user);
+	public User queryByName(User user);
 
 	public boolean modify(User user);
 }

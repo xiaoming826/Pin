@@ -19,4 +19,34 @@
     <servlet-name>MainServlet</servlet-name>
     <url-pattern>/main</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>JobServlet</display-name>
+    <servlet-name>JobServlet</servlet-name>
+    <servlet-class>com.xinxin.web.JobServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JobServlet</servlet-name>
+    <url-pattern>/job</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserServlet</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.xinxin.web.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CompanyServlet</display-name>
+    <servlet-name>CompanyServlet</servlet-name>
+    <servlet-class>com.xinxin.web.CompanyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CompanyServlet</servlet-name>
+    <url-pattern>/company</url-pattern>
+  </servlet-mapping>
 </web-app>
