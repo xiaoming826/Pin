@@ -121,7 +121,7 @@
 							<li class="clearfix">
 							<div class="hot_pos_l">
 								<div class="mb10">
-									<a href="/job?action=show&id=<%=job.getId() %>" target="_blank"><%=job.getTitle() %></a> &nbsp; <span
+									<a href="job?action=show&id=<%=job.getId() %>" target="_blank"><%=job.getTitle() %></a> &nbsp; <span
 										class="c9">[<%=job.getAddrs() %>]</span>
 								</div>
 								<span><em class="c7">月薪： </em><%=job.getMoney() %></span> <span><em
@@ -147,7 +147,7 @@
 							<li class="odd clearfix">
 							<div class="hot_pos_l">
 								<div class="mb10">
-									<a href="/job?action=show&id=<%=job.getId() %>" target="_blank"><%=job.getTitle() %></a> &nbsp; <span
+									<a href="job?action=show&id=<%=job.getId() %>" target="_blank"><%=job.getTitle() %></a> &nbsp; <span
 										class="c9">[<%=job.getAddrs() %>]</span>
 								</div>
 								<span><em class="c7">月薪： </em><%=job.getMoney() %></span> <span><em

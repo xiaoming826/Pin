@@ -1348,7 +1348,7 @@ ul.my_delivery{margin:20px 48px;}
 .profile_box .pAdd:hover{background-position: 20px -76px;}
 .profile_box .pAdd span{display:block;font-size:16px;color: #0d9572; text-decoration: underline; margin-top: 5px;}
 .profile_box td{padding:8px 0 8px 20px;}
-#basicInfo{min-height:116px;}
+#basicInfo{min-height:755px;}
 #basicInfo .basicEdit{overflow: hidden;padding:0;}
 #basicInfo .basicShow{font-size:16px;padding:0 130px 0 20px; line-height: 28px; position: relative;}
 #basicInfo .basicShow span.nofill{color:#e46a4a;}

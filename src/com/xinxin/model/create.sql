@@ -37,3 +37,12 @@ drop table company;
 		);
 		
 	insert into jobinfo (title,content,dateTime,money,experience,cid) values ("招聘保险业务员","招聘保险业务员","2016年01月06日00:40:20","6000/月","本科",1);
+	
+	
+	create table jobapply(
+		id int primary key AUTO_INCREMENT,
+		userid int,
+		jobid int,
+		dateTime varchar(50)
+		);
+	

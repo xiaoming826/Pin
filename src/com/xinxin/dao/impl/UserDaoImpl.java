@@ -20,6 +20,7 @@ public class UserDaoImpl implements UserDao {
 			ps.setString(2, user.getPwd());
 			ResultSet rs = ps.executeQuery();
 			if (rs.next()) {
+				user.setId(rs.getInt(rs.getInt("id")));
 				user.setName(rs.getString("name"));
 				user.setSex(rs.getString("sex"));
 				user.setAge(rs.getString("age"));

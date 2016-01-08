@@ -8,7 +8,7 @@
 					alt="专注互联网招聘" />
 				</a> -->
 				<ul class="reset" id="navheader">
-					<li class="current"><a href="index.html">首页</a></li>
+					<li class="current"><a href="index.jsp">首页</a></li>
 					<li><a href="companylist.jsp">公司</a></li>
 					<li><a href="jianli.jsp" rel="nofollow">我的简历</a></li>
 					<li><a href="create.jsp" rel="nofollow">发布职位</a></li>

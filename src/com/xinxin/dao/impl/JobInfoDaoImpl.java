@@ -138,4 +138,38 @@ public class JobInfoDaoImpl implements JobInfoDao{
 		return jobs;
 	}
 
+	public boolean apply(String jobid, String userid) {
+		Connection conn = DbUtil.getConn();
+		String sql="insert into jobapply (jobid,userid) values (?,?) ;";
+		try {
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ps.setString(1, jobid);
+			ps.setString(2, userid);
+			return ps.execute();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+		
+	}
+	
+
+	public boolean isApply(String jobid, String userid) {
+		Connection conn = DbUtil.getConn();
+		String sql="select * from jobapply where jobid= ? and userid=?;";
+		try {
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ps.setString(1, jobid);
+			ps.setString(2, userid);
+			ResultSet rs=ps.executeQuery();
+			if (rs.next()) {
+				return true;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+		
+	}
+
 }
